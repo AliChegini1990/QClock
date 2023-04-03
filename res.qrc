@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>pic/clock.png</file>
+        <file>pic/clock2.png</file>
+        <file>pic/clock3.png</file>
+        <file>pic/clock4.png</file>
+        <file>pic/clock5.png</file>
+        <file>pic/button.png</file>
+        <file>pic/knob1.png</file>
+        <file>pic/knob1_h.png</file>
+        <file>pic/knob1_m.png</file>
+    </qresource>
+</RCC>

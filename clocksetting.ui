@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>clocksetting</class>
+ <widget class="QWidget" name="clocksetting">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>131</width>
+    <height>309</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+ {
+    /*  background-color:transparent;*/
+	
+	background-color: rgb(213, 207, 255);
+
+ }
+</string>
+  </property>
+  <widget class="QCheckBox" name="checkBox">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>200</y>
+     <width>54</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>on top</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>0</y>
+     <width>129</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame
+{
+	/* background-color:transparent; 
+	background-image: url(:/images/pic/clock.png);
+	background-repeat: no-repeat;
+	background-position: center;*/
+
+             border-image: url(:/images/pic/clock3.png);
+			  border-top: 10px transparent;
+   			 border-bottom: 10px transparent;
+             border-right: 5px transparent;
+             border-left: 5px transparent;
+
+	  
+
+}
+
+QFrame:hover	
+{
+			border-image: url(:/images/pic/clock3.png);
+ 			border-top: 0px transparent;
+   			 border-bottom: 0px transparent;
+             border-right: 0px transparent;
+             border-left: 0px transparent;
+}
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>240</y>
+     <width>129</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+             color: black;
+             border-image: url(:/images/pic/button.png);
+             border-top: 10px transparent;
+             border-bottom: 10px transparent;
+             border-right: 10px transparent;
+             border-left: 10px transparent;
+         }
+QPushButton:hover
+{
+  			color: yellow;
+            
+}
+QPushButton:hover:pressed
+{
+  			color: green;
+            
+}</string>
+   </property>
+   <property name="text">
+    <string>close</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>270</y>
+     <width>129</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+             color:black;
+             border-image: url(:/images/pic/button.png) 10 10 10 10;
+             border-top: 10px transparent;
+             border-bottom: 10px transparent;
+             border-right: 10px transparent;
+             border-left: 10px transparent;
+
+         }
+QPushButton:hover
+{
+  			color: yellow;
+            
+}
+QPushButton:hover:pressed
+{
+  			color: green;
+            
+}</string>
+   </property>
+   <property name="text">
+    <string>exit application</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>clocksetting</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>176</x>
+     <y>159</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>221</x>
+     <y>8</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>ontop()</slot>
+ </slots>
+</ui>
