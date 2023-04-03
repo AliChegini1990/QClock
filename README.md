@@ -1,0 +1,2 @@
+# QClock
+Qt analog clock
