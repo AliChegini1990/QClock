@@ -7,7 +7,8 @@ Analog clock
 ![clock picture](/pic/qclock.png).
 
 # Build
-qmake clock.pro
-make
+
+- qmake clock.pro
+- make
 
 
